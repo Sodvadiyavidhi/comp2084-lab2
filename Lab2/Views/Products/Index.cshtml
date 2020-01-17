@@ -1,0 +1,13 @@
+﻿<div>
+    <h1>List of Items</h1>
+    <ul>
+        @foreach (string s in ViewBag.product)
+        {
+            //<li class="collection-item"><a href="#!">@s</a></li>
+            <li>@Html.ActionLink(@s, "Details", "Products")</li>
+        }
+     
+        
+    </ul>
+</div>
+
